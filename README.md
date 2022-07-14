@@ -26,7 +26,7 @@
 	conda install pip
 	pip install gensim
 	pip install nltk
-  pip install --upgrade numpy	
+        pip install --upgrade numpy	
 	
 # INGRESAR AL DIRECTORIO DEL PROYECTO
 
@@ -35,16 +35,18 @@
 	
 # EN EL DIRECTORIO DE ESTE VENV CREADO
 # COPIAR LOS ARCHIVOS DE LA CARPETA DEL GIT
-# EN SUS RESPECTIVOS DIRECTORIOS. EL DUMP DE WIKIPEDIA COMPLETO PESA 19GB RAZÓN POR LA QUE SOLO SUBIMOS UN EJEMPLO.
+# EN SUS RESPECTIVOS DIRECTORIOS. EL DUMP DE WIKIPEDIA COMPLETO PESA 19GB RAZÓN POR LA QUE NO LO SUBIMOS PERO LO PUEDE DESCARGAR DE
+# https://dumps.wikimedia.org/enwiki/20220620/enwiki-20220620-pages-articles-multistream1.xml-p1p41242.bz2 DESCOMPRIMIR Y CAMBIAR
+# LA EXTENSIÓN A XML POSTERIORMENTE CREAR UNA CARPETA LLAMADA articles-corpus
 
-	..\tarea3\data
-	..\tarea3\notebooks
+	..\tarea4\wiki_parser.py
+	..\tarea4\wiki_topic_model.py
+	..\tarea4\enwiki-20220620-pages-articles-multistream1.xml
 	
-# CORRER LOS NOTEBOOKS
+# CORRER LOS ARCHIVOS EN SIGUIENTE ORDEN
 
-	cd notebooks
-	dir
-	jupyter notebook topic_modelling_NPL2.ipynb
+	wiki_parser.py
+	wiki_topic_model.py
 
 # FINALIZAR
 
@@ -53,5 +55,4 @@
 # RETOMAR
 
 	conda activate tarea4
-	cd ..\tarea4
-	jupyter notebook topic_modelling_NPL2.ipynb
+	cd ..\tarea4	
